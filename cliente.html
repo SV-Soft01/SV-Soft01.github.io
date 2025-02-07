@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SV-Book - Reserva tu cita</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SV-Book</div>
+            <ul id="nav-menu">
+                <li><button id="home-btn">Inicio</button></li>
+                <li><button id="services-btn">Servicios</button></li>
+                <li><button id="barbers-btn">Barberos</button></li>
+                <li><button id="booking-btn">Reservar</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="active">
+            <h1>Bienvenido a SV-Book</h1>
+            <button id="main-booking-btn" class="main-booking-btn">Reservar Ahora</button>
+            <p>Reserva tu cita con los mejores barberos de la ciudad.</p>
+            <p class="instagram-message">¿Te gustaría tener una web como esta? Escríbenos en Instagram <a href="https://www.instagram.com/sam_velazquez01?igsh=MWY1aHR1NmJuOHphag%3D%3D&utm_source=qr" target="_blank">@sam_velazquez01</a></p>
+        </section>
+
+        <section id="services">
+            <h2>Nuestros Servicios</h2>
+            <div id="service-list" class="grid-list"></div>
+        </section>
+
+        <section id="barbers">
+            <h2>Nuestros Barberos</h2>
+            <div id="barber-list" class="grid-list"></div>
+        </section>
+
+        <section id="booking">
+  <h2>Reserva tu cita</h2>
+  <div id="booking-steps">
+    <div id="step-barber" class="booking-step active">
+      <h3>Selecciona un barbero</h3>
+      <div id="barber-selection" class="selection-grid"></div>
+      <button id="next-to-service" class="next-step" disabled>Siguiente</button>
+    </div>
+    <div id="step-service" class="booking-step">
+      <h3>Selecciona un servicio</h3>
+      <div id="service-selection" class="selection-grid"></div>
+      <button id="prev-to-barber" class="prev-step">Anterior</button>
+      <button id="next-to-datetime" class="next-step" disabled>Siguiente</button>
+    </div>
+    <div id="step-datetime" class="booking-step">
+      <h3>Selecciona fecha y hora</h3>
+      <input type="date" id="date-select" required>
+      <select id="time-select" required>
+        <option value="">Selecciona una hora</option>
+      </select>
+      <button id="prev-to-service" class="prev-step">Anterior</button>
+      <button id="next-to-client-info" class="next-step" disabled>Siguiente</button>
+    </div>
+    <div id="step-client-info" class="booking-step">
+      <h3>Tus datos</h3>
+      <input type="text" id="client-name" placeholder="Tu nombre" required>
+      <input type="tel" id="client-phone" placeholder="Tu número de teléfono" required>
+      <input type="email" id="client-email" placeholder="Tu email (opcional)">
+      <button id="prev-to-datetime" class="prev-step">Anterior</button>
+      <button id="submit-booking" class="submit-booking">Reservar Cita</button>
+    </div>
+  </div>
+</section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 SV-Book. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
+

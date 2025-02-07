@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SV-Book - Administración</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SV-Book - Admin</div>
+            <ul id="nav-menu">
+                <li><button id="services-btn">Servicios</button></li>
+                <li><button id="barbers-btn">Barberos</button></li>
+                <li><button id="schedules-btn">Horarios</button></li>
+                <li><button id="appointments-btn">Citas</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="admin-auth" class="admin-auth">
+            <h2>Panel de Administración</h2>
+            <form id="admin-auth-form">
+                <input type="password" id="admin-password" placeholder="Contraseña" required>
+                <button type="submit">Acceder</button>
+            </form>
+        </section>
+
+        <section id="admin-panel" style="display: none;">
+            <div id="admin-content"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 SV-Book. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
